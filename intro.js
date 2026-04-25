@@ -26,7 +26,7 @@ let introOneFrames = [];
 for (let i = 1; i <= 109; i++) {
     let img = new Image();
     let num = i.toString().padStart(4, "0");
-    img.src = "/assets/introimg/introone_" + num + ".png";
+    img.src = "assets/introimg/introone_" + num + ".png";
     introOneFrames.push(img);
 }
 
@@ -36,7 +36,7 @@ let introFrames = [];
 for (let i = 1; i <= 120; i++) {
     let img = new Image();
     let num = i.toString().padStart(4, "0");
-    img.src = "/assets/introimg/intro_" + num + ".png";
+    img.src = "assets/introimg/intro_" + num + ".png";
     introFrames.push(img);
 }
 
