@@ -1,14 +1,14 @@
 const imgVida = new Image();
-imgVida.src = "/assets/protagonistaItems/vida/vida.png";
+imgVida.src = "assets/protagonistaItems/vida/vida.png";
 
 const imgVidaGris = new Image();
-imgVidaGris.src = "/assets/protagonistaItems/vida/vidagris.png";
+imgVidaGris.src = "assets/protagonistaItems/vida/vidagris.png";
 
 const imgLlave = new Image();
-imgLlave.src = "/assets/protagonistaItems/items/llave.png";
+imgLlave.src = "assets/protagonistaItems/items/llave.png";
 
 const imgLlaveGris = new Image();
-imgLlaveGris.src = "/assets/protagonistaItems/items/llavegris.png";
+imgLlaveGris.src = "assets/protagonistaItems/items/llavegris.png";
 
 
 
