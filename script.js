@@ -740,7 +740,7 @@ function updateEnemigos() {
             if(suerte < 1/15){
               objetosSuelo.push({x: e,x, y: e.y, tipo: "llave", width: 16, height: 16});
             }
-            } else if (suerte < 2/15) { 
+             else if (suerte < 2/15) { 
                 objetosSuelo.push({ x: e.x, y: e.y, tipo: "corazon", width: 16, height: 16 });
             }
 
