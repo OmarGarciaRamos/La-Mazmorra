@@ -735,17 +735,17 @@ function updateEnemigos() {
         }
         if (e.hitTimer > 0) e.hitTimer--;
 
-    if (e.vida <= 0) {
-            let suerte = Math.random(); 
-            if(suerte < 1/15){
-              objetosSuelo.push({x: e,x, y: e.y, tipo: "llave", width: 16, height: 16});
+    if (e.vida <= 0) {
+            let suerte = Math.random(); 
+            if (suerte < 1/15) {
+                objetosSuelo.push({ x: e.x, y: e.y, tipo: "llave", width: 16, height: 16 });
             }
-             else if (suerte < 2/15) { 
-                objetosSuelo.push({ x: e.x, y: e.y, tipo: "corazon", width: 16, height: 16 });
-            }
-
-            enemigos.splice(i, 1);
-        }/////jala porfavor github
+            else if (suerte < 2/15) { 
+                objetosSuelo.push({ x: e.x, y: e.y, tipo: "corazon", width: 16, height: 16 });
+            }
+    
+            enemigos.splice(i, 1);
+        }
     }
 }
 
