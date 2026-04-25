@@ -747,7 +747,7 @@ function updateEnemigos() {
             }
 
             enemigos.splice(i, 1);
-        }
+        }/////jala porfavor github
     }
 }
 
