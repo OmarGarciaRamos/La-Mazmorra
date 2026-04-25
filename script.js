@@ -65,9 +65,8 @@ if (window.imgCorazon === undefined) {
     window.imgCorazon.src = "assets/protagonistaItems/vida/vida.png";
 }
 
-if (window.objetosSuelo === undefined) {
     window.objetosSuelo = [];
-}
+
 
 for (let i = 1; i <= 4; i++) {
     let img = new Image();
