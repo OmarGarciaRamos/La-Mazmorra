@@ -39,7 +39,7 @@ const configuracionZonas = {
     "playa": { frames: 16, ruta: "assets/fondosAnimados/playa/untitled_" },
     "canio": { frames: 1, ruta: "assets/fondosAnimados/canio/canio_" },
     "cuartoroto": { frames: 9, ruta: "assets/fondosAnimados/cuartoroto/cuartoroto_" },
-    "nieve": {frames: 1, ruta: "assets/fondosanimados/nieve/nieve_"}
+    "nieve": {frames: 1, ruta: "assets/fondosAnimados/nieve/nieve_"}
 };
 
 let zonaActual = "playa";
