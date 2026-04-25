@@ -53,16 +53,16 @@ let transicion = {
     frames: []
 };
 const imgBurbujaE = new Image();
-imgBurbujaE.src = "/assets/E.png"; 
+imgBurbujaE.src = "assets/E.png"; 
 
 if (window.imgLlave === undefined) {
     window.imgLlave = new Image();
-    window.imgLlave.src = "/assets/protagonistaItems/items/llave.png";
+    window.imgLlave.src = "assets/protagonistaItems/items/llave.png";
 }
 
 if (window.imgCorazon === undefined) {
     window.imgCorazon = new Image();
-    window.imgCorazon.src = "/assets/protagonistaItems/vida/vida.png";
+    window.imgCorazon.src = "assets/protagonistaItems/vida/vida.png";
 }
 
 if (window.objetosSuelo === undefined) {
@@ -72,7 +72,7 @@ if (window.objetosSuelo === undefined) {
 for (let i = 1; i <= 4; i++) {
     let img = new Image();
     let num = i.toString().padStart(4, "0");
-    img.src = "/assets/transiciones/transicion_" + num + ".png";
+    img.src = "assets/transiciones/transicion_" + num + ".png";
     transicion.frames.push(img);
 }
 function cargarFondosDeZona(nombreZona) {
@@ -109,7 +109,7 @@ let playerFrames = [];
 for (let i = 1; i <= 12; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/protagonistaItems/protamovimiento/prota de frente_" + num + ".png";
+  img.src = "assets/protagonistaItems/protamovimiento/prota de frente_" + num + ".png";
   playerFrames.push(img);
 }
 
@@ -132,11 +132,11 @@ let shotCooldown = 500;
 
 let proyectilImg = new Image();
 proyectilImg.src =
-  "/assets/protagonistaItems/proyectilesprota/proyectil_0001.png";
+  "assets/protagonistaItems/proyectilesprota/proyectil_0001.png";
 
 let explosionImg = new Image();
 explosionImg.src =
-  "/assets/protagonistaItems/proyectilesprota/proyectil_0002.png";
+  "assets/protagonistaItems/proyectilesprota/proyectil_0002.png";
 
 let animTimer = 0;
 
@@ -184,11 +184,11 @@ let cangrejoDanadoFrames = [];
 for (let i = 1; i <= 6; i++) {
     let img = new Image();
     let num = i.toString().padStart(4, "0");
-    img.src = "/assets/enemigos/cangrejo/normal/cangrejo_" + num + ".png";
+    img.src = "assets/enemigos/cangrejo/normal/cangrejo_" + num + ".png";
     cangrejoFrames.push(img);
 
     let imgD = new Image();
-    imgD.src = "/assets/enemigos/cangrejo/danado/cangrejodanado_" + num + ".png";
+    imgD.src = "assets/enemigos/cangrejo/danado/cangrejodanado_" + num + ".png";
     cangrejoDanadoFrames.push(imgD);
 }
 
@@ -198,16 +198,16 @@ let magoDanadoFrames = [];
 for (let i = 1; i <= 4; i++) {
     let img = new Image();
     let num = i.toString().padStart(4, "0");
-    img.src = "/assets/enemigos/mago/mago_" + num + ".png";
+    img.src = "assets/enemigos/mago/mago_" + num + ".png";
     magoFrames.push(img);
 
     let imgD = new Image();
-    imgD.src = "/assets/enemigos/mago/magodanado_" + num + ".png";
+    imgD.src = "assets/enemigos/mago/magodanado_" + num + ".png";
     magoDanadoFrames.push(imgD);
 }
 let proyectilesEnemigos = [];
 const magoProyectilImg = new Image();
-magoProyectilImg.src = "/assets/enemigos/proyectilenemigo/proyectilenemigo_0001.png";
+magoProyectilImg.src = "assets/enemigos/proyectilenemigo/proyectilenemigo_0001.png";
 
 let fuegoFrames = [];
 let fuegoDanadoFrames = [];
@@ -215,11 +215,11 @@ let fuegoDanadoFrames = [];
 for (let i = 1; i <= 2; i++) {
     let imgN = new Image();
     let num = i.toString().padStart(4, "0");
-    imgN.src = "/assets/enemigos/fuego/enemigofuego_" + num + ".png";
+    imgN.src = "assets/enemigos/fuego/enemigofuego_" + num + ".png";
     fuegoFrames.push(imgN);
 
     let imgD = new Image();
-    imgD.src = "/assets/enemigos/fuego/enemigofuegoDanado_" + num + ".png";
+    imgD.src = "assets/enemigos/fuego/enemigofuegoDanado_" + num + ".png";
     fuegoDanadoFrames.push(imgD);
 }
 
@@ -229,11 +229,11 @@ let slimeDanadoFrames = [];
 for (let i = 1; i <= 4; i++) {
     let imgN = new Image();
     let num = i.toString().padStart(4, "0");
-    imgN.src = "/assets/enemigos/slime/slime_" + num + ".png";
+    imgN.src = "assets/enemigos/slime/slime_" + num + ".png";
     slimeFrames.push(imgN);
 
     let imgD = new Image();
-    imgD.src = "/assets/enemigos/slime/slimedanado_" + num + ".png";
+    imgD.src = "assets/enemigos/slime/slimedanado_" + num + ".png";
     slimeDanadoFrames.push(imgD);
 }
 
@@ -243,7 +243,7 @@ let cristalFrames = [];
 for (let i = 1; i <= 8; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/cristal/cristalprotal_" + num + ".png";
+  img.src = "assets/cristal/cristalprotal_" + num + ".png";
   cristalFrames.push(img);
 }
 
@@ -260,7 +260,7 @@ let camaronFrames = [];
 for (let i = 1; i <= 12; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/enemigos/camarontutorial/normal/camaron_" + num + ".png";
+  img.src = "assets/enemigos/camarontutorial/normal/camaron_" + num + ".png";
   camaronFrames.push(img);
 }
 
@@ -269,7 +269,7 @@ for (let i = 1; i <= 12; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
   img.src =
-    "/assets/enemigos/camarontutorial/dañado/camarondañado_" +
+    "assets/enemigos/camarontutorial/dañado/camarondañado_" +
     num +
     ".png";
   camaronDanadoFrames.push(img);
@@ -542,14 +542,14 @@ let tutorialFrames = [];
 for (let i = 1; i <= 141; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/textbox/textbox_" + num + ".png";
+  img.src = "assets/textbox/textbox_" + num + ".png";
   tutorialFrames.push(img);
 }
 let textboxAmable = [];
 for (let i = 1; i <= 54; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/textbox/texboxamable/textboxamable_" + num + ".png";
+  img.src = "assets/textbox/texboxamable/textboxamable_" + num + ".png";
   textboxAmable.push(img);
 }
 
@@ -557,7 +557,7 @@ let textboxAgresivo = [];
 for (let i = 1; i <= 49; i++) {
   let img = new Image();
   let num = i.toString().padStart(4, "0");
-  img.src = "/assets/textbox/texboxagresivo/textboxagresivo_" + num + ".png";
+  img.src = "assets/textbox/texboxagresivo/textboxagresivo_" + num + ".png";
   textboxAgresivo.push(img);
 }
 
