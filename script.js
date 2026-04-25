@@ -736,15 +736,18 @@ function updateEnemigos() {
         }
         if (e.hitTimer > 0) e.hitTimer--;
 
-       if (e.vida <= 0) {
-    // Soltar llave
-    objetosSuelo.push({ x: e.x, y: e.y, tipo: "llave", width: 16, height: 16 });
-    
-    // Soltar corazón (sin 'else', para que ocurra siempre junto con la llave)
-    objetosSuelo.push({ x: e.x + 5, y: e.y, tipo: "corazon", width: 16, height: 16 }); 
+    if (e.vida <= 0) {
+            let suerte = Math.random(); 
 
-    enemigos.splice(i, 1);
-}
+            if (suerte < 15/15) { 
+               
+                objetosSuelo.push({ x: e.x, y: e.y, tipo: "llave", width: 16, height: 16 });
+            } else if (suerte < 15/15) { 
+                objetosSuelo.push({ x: e.x, y: e.y, tipo: "corazon", width: 16, height: 16 });
+            }
+
+            enemigos.splice(i, 1);
+        }
     }
 }
 
