@@ -993,16 +993,14 @@ function drawEnemigos() {
         let imgSet;
         if (e.tipo === "mago") {
             imgSet = (e.hitTimer > 0) ? magoDanadoFrames : magoFrames;
-        }
-        else if (e.tipo === "fuego") {
+        } else if (e.tipo === "fuego") {
             imgSet = (e.hitTimer > 0) ? fuegoDanadoFrames : fuegoFrames;
-        } 
-        else if (e.tipo === "slime") {
+        } else if (e.tipo === "slime") {
             imgSet = (e.hitTimer > 0) ? slimeDanadoFrames : slimeFrames;
-        }
-        else {
+        } else {
             imgSet = (e.hitTimer > 0) ? cangrejoDanadoFrames : cangrejoFrames;
-        }let img = imgSet[e.frame];
+        }
+        let img = imgSet[e.frame];
         if (img && img.complete) {
             ctx.drawImage(
                 img, 
@@ -1010,7 +1008,8 @@ function drawEnemigos() {
                 Math.floor(e.y - 16), 
                 32, 32
             );
-        }});
+        }
+    });
 }
 
 function drawProyectilesEnemigos() {
