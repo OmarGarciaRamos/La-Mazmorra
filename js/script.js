@@ -820,7 +820,7 @@ function updateEnemigos() {
 
     if (e.vida <= 0) {
             let suerte = Math.random(); 
-            if (suerte < 1/15) {
+            if (suerte < 1/10) {
                 objetosSuelo.push({ x: e.x, y: e.y, tipo: "llave", width: 16, height: 16 });
             }
             else if (suerte < 2/15) { 
